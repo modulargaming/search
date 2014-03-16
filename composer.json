@@ -1,0 +1,16 @@
+{
+	"name": "modulargaming/search",
+	"type": "modulargaming-module",
+	"license": "BSD-3-Clause",
+	"description": "Search module for Modular Gaming",
+	"keywords": [
+		"modulargaming"
+	],
+	"homepage": "https://github.com/modulargaming/search",
+
+	"require": {
+		"php": ">=5.4",
+		"modulargaming/installer": "~1.0",
+		"ruflin/Elastica": "~1.0.1"
+	}
+}
