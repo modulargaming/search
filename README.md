@@ -65,7 +65,7 @@ class Model_User extends MG_Model_User {
 }
 ```
 
-The mapping can either be set with the Minion Task ```php ./minion Search::mapping --Model=User``` or manually
+The mapping can either be set with the Minion Task ```php ./minion Search:mapping --model=User``` or manually
 entered into ElasticSearch.
 
 All changes to a searchable model will also send the matching queries to ElasticSearch to keep them matching.
@@ -73,7 +73,7 @@ All changes to a searchable model will also send the matching queries to Elastic
 Worth noting is that ALL changes will trigger a search query update, this can be changed by overwriting the update
 function to only call the trait::update if related property was changed.
 
-The search indexes can be rebuilt using the Minion Task ```php ./minion Search::index --Model=User```.
+The search indexes can be rebuilt using the Minion Task ```php ./minion Search:index --model=User```.
 
 ### Search page, Retrieving
 
