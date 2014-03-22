@@ -87,7 +87,7 @@ The example User model. Notice we only trigger the update if the username proper
 class Model_User extends MG_Model_User {
 	use Model_ElasticSearch {
 		update as _traitUpdate;
-	};
+	}
 
 	/**
 	 * @return \Elastica\Document
